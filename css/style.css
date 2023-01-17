@@ -1,19 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
-
 :root {
   --first-color: rgb(255, 193, 7);
   --first-alpha-color: rgba(255, 193, 7, 0.75);
-  --second-color: rgb(28, 26, 23); /*rgba(23, 15, 43, 0.952);*/
+  --second-color: rgb(28, 37, 32);/*rgb(28, 26, 23); /*rgba(23, 15, 43, 0.952);*/
   --second-alpha-color: rgba(15, 23, 43, 0.65);
-  
-
-  /* --link-color: rgb(80, 158, 227);
-  --link-alpha-color: rgba(80, 158, 227, 0.75); */
-
   --bg-color: rgb(245, 245, 245);
   --bg-alpha-color: rgba(245, 245, 245, 0.75);
-
   --font-color: rgb(245, 245, 245);
   --icon-color: rgb(75, 75, 75);
 }
@@ -59,16 +52,11 @@ a:hover {
 
 .nav-item {
   padding-left: 0.5rem;
-  /* transition: all 0.3s ease-out; */
 }
 
 .nav-item a:hover {
   color: var(--first-color);
 }
-
-/* .nav-item:hover {
-  background-color: var(--link-alpha-color);
-} */
 
 .nav-link {
   color: var(--font-color);
@@ -81,7 +69,6 @@ a:hover {
 .btn {
   font-weight: 600;
   text-transform: uppercase;
-  /* transition: 0.5s; */
 }
 
 .btn-1 {
