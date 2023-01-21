@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
-:root {
+/* :root {
   --first-color: rgb(255, 193, 7);
   --first-alpha-color: rgba(255, 193, 7, 0.75);
-  --second-color: rgb(28, 37, 32);/*rgb(28, 26, 23); /*rgba(23, 15, 43, 0.952);*/
+  --second-color: rgb(28, 37, 32);
   --second-alpha-color: rgba(15, 23, 43, 0.65);
   --bg-color: rgb(245, 245, 245);
   --bg-alpha-color: rgba(245, 245, 245, 0.75);
   --font-color: rgb(245, 245, 245);
   --icon-color: rgb(75, 75, 75);
+} */
+
+/* rgb(28, 26, 23); /*rgba(23, 15, 43, 0.952); ---> estos son colores de prueba */
+
+/* Nueva de definicion de variables para los colores */
+:root {
+  --primary: rgb(255, 193, 7);
+  --secondary: rgb(28, 37, 32);
+  --light: rgb(245, 245, 245);
 }
 
-/* Esto es un comentario para actualizar el contenido de Gitgub */
 
 .back-to-top {
   position: fixed;
@@ -26,12 +34,12 @@ body {
 }
 
 a {
-  color: var(--font-color);
+  color: var(--light);
   transition: all 0.3s ease-out;
 }
 
 a:hover {
-  color: var(--first-color);
+  color: var(--primary);
 }
 
 .navbar-brand img {
@@ -44,12 +52,13 @@ a:hover {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28245, 245, 245%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+
 .navbar-toggler:focus {
   box-shadow: none;
 }
 
 .bg-dark {
-  background-color: var(--second-color) !important;
+  background-color: var(--secondary) !important;
 }
 
 .nav-item {
@@ -57,11 +66,11 @@ a:hover {
 }
 
 .nav-item a:hover {
-  color: var(--first-color);
+  color: var(--primary);
 }
 
 .nav-link {
-  color: var(--font-color);
+  color: var(--light);
   font-size: 1.15rem;
   font-weight: bold;
   letter-spacing: 1.2px;
@@ -82,9 +91,15 @@ a:hover {
   font-weight: bold;
 }
 
+/* Procion de codigo para forzar el cambio del color del boton */
+/* .btn-warning {
+  background-color: black;
+  border: black;
+} */
+
 .btn.btn-warning,
 .btn.btn-secondary {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 
@@ -129,7 +144,7 @@ a:hover {
   top: 50%;
   left: -55px;
   margin-top: -1px;
-  background: var(--first-color);
+  background: var(--primary);
 }
 
 .section-title::after {
@@ -140,7 +155,7 @@ a:hover {
   top: 50%;
   right: -55px;
   margin-top: -1px;
-  background: var(--first-color);
+  background: var(--primary);
 }
 
 .section-title.text-start::before,
@@ -318,11 +333,11 @@ a:hover {
 }
 
 .carousel-indicators button.active i {
-  color: var(--first-color);
+  color: var(--primary);
 }
 
 .carousel-indicators button.active h4 {
-  color: var(--first-color);
+  color: var(--primary);
   font-size: 2.125rem;
   position: absolute;
   text-align: center;
@@ -359,7 +374,7 @@ span {
 }
 
 .item:hover {
-  background: var(--first-alpha-color);
+  background: var(--primary);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -383,7 +398,7 @@ span {
 .item .icon {
   font-size: 40px;
   margin-bottom: 25px;
-  color: var(--first-color);
+  color: var(--primary);
   width: 90px;
   height: 90px;
   line-height: 96px;
@@ -398,7 +413,7 @@ span {
 
 .item h6 {
   margin-bottom: 30px;
-  color: var(--second-color);
+  color: var(--secondary);
   font-size: 20px;
   font-weight: bold;
 }
