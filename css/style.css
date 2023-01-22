@@ -15,9 +15,12 @@
 
 /* Nueva de definicion de variables para los colores */
 :root {
-  --primary: rgb(255, 193, 7);
-  --secondary: rgb(28, 37, 32);
-  --light: rgb(245, 245, 245);
+  --primary: #9f533d;
+  --secondary: #3e5952;
+  --light: #f5f5f5;
+  --hover: #d5cdbe;
+  --white: #ffffff;
+  --font: #9f533d;
 }
 
 
@@ -39,7 +42,7 @@ a {
 }
 
 a:hover {
-  color: var(--primary);
+  color: var(--hover);
 }
 
 .navbar-brand img {
@@ -51,7 +54,6 @@ a:hover {
   --bs-navbar-toggler-border-color: none;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28245, 245, 245%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
 
 .navbar-toggler:focus {
   box-shadow: none;
@@ -66,7 +68,7 @@ a:hover {
 }
 
 .nav-item a:hover {
-  color: var(--primary);
+  color: var(--hover);
 }
 
 .nav-link {
@@ -92,14 +94,18 @@ a:hover {
 }
 
 /* Procion de codigo para forzar el cambio del color del boton */
-/* .btn-warning {
-  background-color: black;
-  border: black;
-} */
+.btn-warning {
+  background-color: var(--primary);
+  border: var(--primary);
+}
+
+.btn-warning:hover {
+  background-color: var(--hover);
+}
 
 .btn.btn-warning,
 .btn.btn-secondary {
-  color: #ffffff;
+  color: var(--light)
 }
 
 
@@ -124,16 +130,20 @@ a:hover {
 }
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffc107'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239f533d'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")
 }
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffc107'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239f533d'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
 }
 
 /* SECTION ABOUT US */
 .section-title {
   position: relative;
   display: inline-block;
+}
+
+.text-color {
+  color: var(--font);
 }
 
 .section-title::before {
@@ -362,7 +372,7 @@ span {
 }
 
 .item {
-  background: #ffffff;
+  background: var(--white);
   text-align: center;
   padding: 40px 25px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
@@ -373,8 +383,12 @@ span {
   transition: all 0.5s ease 0s;
 }
 
+.item .text-color {
+  color: var(--font);
+}
+
 .item:hover {
-  background: var(--primary);
+  background: var(--hover);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -382,7 +396,8 @@ span {
 
 .item:hover .item,
 .item:hover span.icon {
-  background: #ffffff;
+  background: var(--light);
+  color: var(--hover);
   border-radius: 10px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -390,7 +405,7 @@ span {
 
 .item:hover h6,
 .item:hover p {
-  color: #ffffff;
+  color: var(--light);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
