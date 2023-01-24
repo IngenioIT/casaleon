@@ -148,7 +148,7 @@ a:hover {
 }
 
 /* cambio de carousel */
-.section-title-carousel::before {
+/* .section-title-carousel::before {
   position: absolute;
   content: "";
   width: 45px;
@@ -168,7 +168,7 @@ a:hover {
   right: -55px;
   margin-top: -1px;
   background: var(--light);
-}
+} */
 /* fin del cambio */
 
 
@@ -250,9 +250,10 @@ a:hover {
 }
 
 .service-header h3 {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: var(--font);
   margin-bottom: 1rem;
 }
 
@@ -273,8 +274,8 @@ a:hover {
 }
 
 .service-header i {
-  font-size: 3rem;
-  color: var(--icon-color);
+  font-size: 2.5rem;
+  color: var(--hover-2);
   margin-right: 1rem;
 }
 
@@ -423,7 +424,7 @@ span {
 .item:hover .item,
 .item:hover span.icon {
   background: var(--light);
-  color: var(--hover-1);
+  color: var(--hover-2);
   border-radius: 10px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -431,7 +432,7 @@ span {
 
 .item:hover h6,
 .item:hover p {
-  color: var(--light);
+  color: var(--hover-2);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
