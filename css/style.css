@@ -1,19 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-/* :root {
-  --first-color: rgb(255, 193, 7);
-  --first-alpha-color: rgba(255, 193, 7, 0.75);
-  --second-color: rgb(28, 37, 32);
-  --second-alpha-color: rgba(15, 23, 43, 0.65);
-  --bg-color: rgb(245, 245, 245);
-  --bg-alpha-color: rgba(245, 245, 245, 0.75);
-  --font-color: rgb(245, 245, 245);
-  --icon-color: rgb(75, 75, 75);
-} */
-
-/* rgb(28, 26, 23); /*rgba(23, 15, 43, 0.952); ---> estos son colores de prueba */
-
-/* Nueva de definicion de variables para los colores */
 :root {
   --primary: #9f533d;
   --secondary: #3e5952;
@@ -25,7 +12,6 @@
   --wsp: #25d366;
 }
 
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -34,8 +20,12 @@
   z-index: 99;
 }
 
-body {
+/* body {
   font-family: 'Raleway', sans-serif;
+} */
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -110,7 +100,6 @@ a:hover {
   color: var(--light)
 }
 
-
 .carousel-caption {
   top: 0;
   left: 0;
@@ -147,31 +136,6 @@ a:hover {
 .text-color {
   color: var(--font);
 }
-
-/* cambio de carousel */
-/* .section-title-carousel::before {
-  position: absolute;
-  content: "";
-  width: 45px;
-  height: 2px;
-  top: 50%;
-  left: -55px;
-  margin-top: -1px;
-  background: var(--light);
-}
-
-.section-title-carousel::after {
-  position: absolute;
-  content: "";
-  width: 45px;
-  height: 2px;
-  top: 50%;
-  right: -55px;
-  margin-top: -1px;
-  background: var(--light);
-} */
-/* fin del cambio */
-
 
 .section-title::before {
   position: absolute;
