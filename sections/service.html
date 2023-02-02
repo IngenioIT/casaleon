@@ -50,7 +50,7 @@
           <div class="text-center">
             <h1 class="section-title text-color fw-bolder text-uppercase mb-5">Nuestros Servicios</h1>
           </div>
-          <!-- MODAL WINDOW -->
+          <!-- MODAL WINDOW KITCHEN -->
           <div class="modal fade" id="kitchen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -59,7 +59,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                   <img src="../img/g-house-4.jpg" class="img-thumbnail img-fluid" alt="imagen de nosotros">
+                   <img src="../img/g-house-4.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
                    <img src="../img/g-house-7.jpg" class="img-thumbnail img-fluid" alt="imagen de nosotros">
                 </div>
                 <!-- <div class="modal-footer">
@@ -69,6 +69,56 @@
               </div>
             </div>
           </div>
+
+          <!-- MODAL WINDOW BEDROOM -->
+          <div class="modal fade" id="bedroom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   <img src="../img/g-house-10.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                   <img src="../img/g-house-11.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                   <img src="../img/g-house-12.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                   <img src="../img/g-house-13.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                   <img src="../img/g-house-14.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL WINDOW GARDEN -->
+          <div class="modal fade" id="garden" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   <img src="../img/garden-1.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                   <img src="../img/garden-2.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                   <img src="../img/garden-3.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                   <img src="../img/garden-4.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                   <img src="../img/garden-5.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                   <img src="../img/garden-6.jpg" class="img-thumbnail img-fluid mb-3" alt="imagen de nosotros">
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+
+
           <div class="row g-4 mb-5 pb-4">
             <div class="col-lg-4 col-md-6">
               <div class="room-item shadow rounded overflow-hidden">
@@ -82,9 +132,11 @@
                   <div class="d-flex mb-3">
                     <small class="border-end me-3 pe-3"><i class="fa fa-bed text-color me-2"></i>3 Camas</small>
                     <small class="me-3 pe-3"><i class="fa fa-bath text-color me-2"></i>1 Baño</small>
-                    
                   </div>
                   <p class="text-body fw-light mb-5">Una habitación con tres camas y sommier de palza y media. Ropa de cama. Aire acondicionado frío-calor. Baño completo con termotanque.</p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="btn btn-sm btn-warning rounded py-2 px-4" data-bs-toggle="modal" data-bs-target="#bedroom">Ver más</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -123,6 +175,9 @@
                     <small class="me-3 pe-3"><i class="fa fa-fire text-color me-2"></i>Jardín y parrilla</small>
                   </div>
                   <p class="text-body fw-light mb-5">Amplio jardín con parrilla y piscina. Estacionamiento privado sin techo, alarma y cámaras de vigilancia. Se aceptan mascotas.</p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="btn btn-sm btn-warning rounded py-2 px-4" data-bs-toggle="modal" data-bs-target="#garden">Ver más</a>
+                  </div>
                 </div>
               </div>
             </div>
