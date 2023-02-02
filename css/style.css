@@ -90,7 +90,7 @@ a:hover {
 
 .btn.btn-warning,
 .btn.btn-secondary {
-  color: var(--light)
+  color: var(--light);
 }
 
 .carousel-caption {
@@ -345,8 +345,6 @@ a:hover {
   text-align: center;
   margin-top: -49px;
 }
-
-
 
 .about img {
   width: 100%;
